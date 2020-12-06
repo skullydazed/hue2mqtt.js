@@ -368,6 +368,7 @@ function getGroups(callback) {
         } else if (res && res.length > 0) {
             log.debug('got', res.length, 'groups');
             res.forEach(group => {
+		log.debug('group', group.name);
                 groupNames[group.name] = group.id;
             });
         }
