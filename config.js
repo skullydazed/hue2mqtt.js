@@ -28,10 +28,10 @@ module.exports = require('yargs')
     .boolean('replace-spaces')
     .boolean('mqtt-retain')
     .default({
-        'mqtt-url': 'mqtt://127.0.0.1',
+        'mqtt-url': 'mqtt://mosquitto',
         name: 'hue',
-        verbosity: 'info',
-        'polling-interval': 10,
+        verbosity: 'debug',
+        'polling-interval': 5,
         'mqtt-retain': true
     })
     .version()
